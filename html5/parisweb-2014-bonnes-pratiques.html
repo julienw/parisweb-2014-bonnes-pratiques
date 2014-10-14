@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</h1>
+    <p class="footer">
+      Anthony Ricaud
+      <a href="http://twitter.com/">@rik24d</a> ou
+      <a href="mailto:julien@mozilla.com">rik@mozilla.com</a>
+    </p>
+    <p class="footer">
+      Julien Wajsberg, 
+      <a href="http://twitter.com/">@jwajsberg</a> ou
+      <a href="mailto:julien@mozilla.com">julien@mozilla.com</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p>Cette présentation utilise le système <em>shower</em>; vous pouvez voir
+    les notes en passant la souris sur les prévisualisations des pages, et vous
+    pouvez entrer dans le mode de présentation en cliquant sur n'importe quelle
+    page. Vous pouvez ensuite utilisez le clavier pour naviguer. <button
+    onclick="goFullScreen()">Passer en mode plein écran</button></p>
+    <p class="abstract">
+      <strong>Résumé: </strong>
+    </p>
+  </aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+  <div id="cover" class="slide"><div>
+    <section>
+      <header>
+        <h2>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</h2>
+      </header>
+      <!--img src="pictures/templatedemos/high-five.jpg" 
+           class="middle shadow" height="400"
+           alt="High-five at the Mozilla Festival!" -->
+      <small class="byline">
+        Anthony Ricaud, Paris-Web, Le Beffroi, 17 octobre 2014
+      </small>
+      <small class="byline">
+        Julien Wajsberg, Paris-Web, Le Beffroi, 17 octobre 2014
+      </small>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+<!-- end slide block -->
+
+<div id="mozilla" class="slide"><div>
+<section>
+  <header>
+  <h2>Mozilla a une mission</h2>
+  </header>
+  <img src="themes/mozilla/images/Fx-logo.png" class="middle" width="400" alt="Firefox">
+  <footer class="notes">
+    <ul>
+      <li>Conserver le web ouvert et accessible.</li>
+      <li>Internet doit améliorer la vie des personnes.</li>
+      <li>La sécurité est fondamentale et non pas une option.</li>
+      <li>Chacun doit pouvoir former ses propres expériences sur Internet.</li>
+    </ul>
+  </footer>
+</section>
+</div></div> 
+
+<div id="firefox-os" class="slide"><div>
+<section>
+  <header>
+  <h2>Firefox OS: un OS mobile libre pour le web</h2>
+  </header>
+  <img src="pictures/fxos/firefoxos.png" 
+       alt="Firefox OS" 
+       class="middle" height="450">
+  <footer class="notes">
+    <ul>
+      <li>Les applications sont faites avec le tryptique HTML/CSS/JavaScript</li>
+      <li>Développement libre, mais surtout ouvert (code ouvert en permanence,
+      listes de diffusion, tracker de bug)</li>
+      <li>Cible les mobiles d'entrée de gamme dès le début, avec un focus sur la
+      simplicité pour des nouveaux utilisateurs de smartphones.</li>
+    </ul>
+  </footer>
+</section>
+</div></div>  
+
+  <div id="thanks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Thanks</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="right" alt="Red panda (Firefox)">
+      <ul class="nobull">
+        <li>Julien Wajsberg, Anthony Ricaud</li>
+        <li>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</li>
+        <li>{<a href="http://twitter.com/jwajsberg">@jwajsberg</a>} {<a
+                href="http://twitter.com/rik24d">@rik24d</a>}</li>
+        <li><strong>Slides</strong>:
+          <a href='http://julienw.github.io/parisweb-2014-bonnes-pratiques/html5/parisweb-2014-bonnes-pratiques.html'>http://julienw.github.io/parisweb-2014-bonnes-pratiques/html5/parisweb-2014-bonnes-pratiques.html</a></li>
+      </ul>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">Photo by Yortw</a>
+      </small>
+
+    <footer class="notes">
+    </footer>
+
+    </section>
+  </div></div>
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
