@@ -1,20 +1,20 @@
 <!DOCTYPE HTML>
 <!-- <html lang="en-US"> -->
 <html lang="en-US" class="fade">
-<!-- 
+<!--
   ^ a class of "fade" makes slides fade smoothly into one another
  -->
 <!-- <html lang="en-US" class="nonumbers"> -->
-<!-- 
-  If you want no numbers on the slides add a "nonumbers" class 
+<!--
+  If you want no numbers on the slides add a "nonumbers" class
   to the HTML element.
-  Adding a class of "fade" will make slides fade into another. 
+  Adding a class of "fade" will make slides fade into another.
 -->
 <head>
   <meta charset="UTF-8">
   <title>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</title>
-<!-- 
-  If you upload your slides to the web, ensure that you have 
+<!--
+  If you upload your slides to the web, ensure that you have
   a good title - this shows up in search results and social
   media links
  -->
@@ -30,7 +30,7 @@
       <a href="mailto:julien@mozilla.com">rik@mozilla.com</a>
     </p>
     <p class="footer">
-      Julien Wajsberg, 
+      Julien Wajsberg,
       <a href="http://twitter.com/">@jwajsberg</a> ou
       <a href="mailto:julien@mozilla.com">julien@mozilla.com</a>
     </p>
@@ -46,9 +46,9 @@
     </p>
   </aside>
 
-<!-- 
+<!--
     Simply copy the whole block for each slide you want.
-  Special slides get extra classes. Each slide needs an ID 
+  Special slides get extra classes. Each slide needs an ID
   to allow for bookmarking and target jumping.
 -->
 
@@ -57,7 +57,7 @@
       <header>
         <h2>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</h2>
       </header>
-      <!--img src="pictures/templatedemos/high-five.jpg" 
+      <!--img src="pictures/templatedemos/high-five.jpg"
            class="middle shadow" height="400"
            alt="High-five at the Mozilla Festival!" -->
       <small class="byline">
@@ -88,15 +88,15 @@
     </ul>
   </footer>
 </section>
-</div></div> 
+</div></div>
 
 <div id="firefox-os" class="slide"><div>
 <section>
   <header>
   <h2>Firefox OS: un OS mobile libre pour le web</h2>
   </header>
-  <img src="pictures/fxos/firefoxos.png" 
-       alt="Firefox OS" 
+  <img src="pictures/fxos/firefoxos.png"
+       alt="Firefox OS"
        class="middle" height="450">
   <footer class="notes">
     <ul>
@@ -108,49 +108,49 @@
     </ul>
   </footer>
 </section>
-</div></div> 
+</div></div>
 
 <div id="pourquoi" class="slide shout"><div>
 <section>
   <header>
   <h2>Pourquoi ?</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
-</div></div>  
+</div></div>
 
 <div id="pourquoi-1" class="slide oneline"><div>
 <section>
   <header>
   <h2>qualité et maintenabilité</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
-</div></div>  
+</div></div>
 
 <div id="pourquoi-2" class="slide oneline"><div>
 <section>
   <header>
   <h2>réutilisation et trousse à outils</h2>
   </header>
-  
+
   <footer class="notes">
     Lors d'un rush, il est rassurant d'avoir une trousse à outils prête à
     l'emploi, qui fonctionne.
   </footer>
 </section>
-</div></div>  
+</div></div>
 
 <div id="pourquoi-3" class="slide oneline"><div>
 <section>
   <header>
   <h2>techniques éprouvées du monde open source</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -161,7 +161,7 @@
   <header>
   <h2>Versions et tickets</h2>
   </header>
-  
+
   <footer class="notes">
     Les deux outils que sont la gestion de versions et le gestionnaire de
     tickets vont souvent ensemble.
@@ -180,7 +180,7 @@
     <li>partage des tâches</li>
     <li>documenter l'historique</li>
   </ul>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -191,7 +191,7 @@
   <header>
   <h2>1 ticket = 1 tâche: correction de bug ou nouvelle fonction</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -203,7 +203,7 @@
   <h2>votre message de commit est important, il doit avoir la référence vers le
   bug</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -214,7 +214,7 @@
   <header>
   <h2>Revue de code</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -225,7 +225,7 @@
   <header>
   <h2>Vérificateurs de code</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -236,30 +236,114 @@
   <header>
   <h2>Tests unitaires</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
 </div></div>
 
-<div id="fonctionnel" class="slide shout"><div>
+<div id="fonctionnel" class="slide oneline"><div>
 <section>
   <header>
-  <h2>Tests fonctionnels</h2>
+    <h2>Tests fonctionnels</h2>
   </header>
-  
+</section>
+</div></div>
+
+<div id="fonctionnel2" class="slide"><div>
+<section>
+  <header>
+    <h2>Tests fonctionnels</h2>
+  </header>
+  <ul class="inner">
+    <li class="active">Teste un scénario d'usage</li>
+    <li>Confiance que toutes les parties fonctionnent ensemble</li>
+    <li>Mais plus lent à tourner</li>
+    <li>Et ne donne pas la source du problème</li>
+    <li>Se concentrer sur les scénarios les plus critiques</li>
+  </ul>
+  <footer class="notes">
+    Remplace la recette du chef de projet
+  </footer>
+</section>
+</div></div>
+
+
+<div id="fonctionnel3" class="slide"><div>
+<section>
+  <header>
+    <h2>Tests fonctionnels</h2>
+  </header>
+  <ul class="inner">
+    <li class="active">Exemples : <a href="http://docs.seleniumhq.org/">Selenium</a>, <a href="http://phantomjs.org/">PhantomJS</a>, <a href="http://slimerjs.org/">SlimerJS</a>, <a href="http://casperjs.org/">CasperJS</a></li>
+    <li>1<sup>re</sup> étape : Choisir un outil et écrire son premier test</li>
+    <li>2<sup>e</sup> étape : Choisir les scénarios importants à tester</li>
+  </ul>
   <footer class="notes">
   </footer>
 </section>
 </div></div>
 
-<div id="ci" class="slide shout"><div>
+<div id="ci" class="slide oneline"><div>
 <section>
   <header>
   <h2>Intégration continue</h2>
   </header>
-  
+
   <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="ci2" class="slide"><div>
+<section>
+  <header>
+    <h2>Intégration continue</h2>
+  </header>
+  <ul class="inner">
+    <li class="active">Faire tourner vos scripts à chaque commit</li>
+    <li>Un humain peut le faire</li>
+    <li>Mais une machine n'oubliera pas</li>
+    <li>Et le fera toujours de la même manière</li>
+  </ul>
+
+  <footer class="notes">
+    Même manière = proche de votre production = build déployable
+  </footer>
+</section>
+</div></div>
+
+<div id="ci3" class="slide"><div>
+<section>
+  <header>
+    <h2>Intégration continue</h2>
+  </header>
+  <ul class="inner">
+    <li class="active">Vous saurez exactement quand un problème apparait</li>
+    <li>Vert: on bosse; Rouge: on corrige</li>
+    <li>Peut générer de jolis graphiques à afficher au bureau</li>
+    <li>On peut aussi faire tourner cela sur les patchs en cours</li>
+  </ul>
+
+  <footer class="notes">
+
+  </footer>
+</section>
+</div></div>
+
+<div id="ci4" class="slide"><div>
+<section>
+  <header>
+    <h2>Intégration continue</h2>
+  </header>
+  <ul class="inner">
+    <li class="active">Exemples : <a href="https://travis-ci.org/">Travis</a>, <a href="http://jenkins-ci.org/">Jenkins</a>, <a href="http://buildbot.net/">Build Bot</a></li>
+    <li>1<sup>re</sup> étape : Avoir des scripts faciles à lancer à la main</li>
+    <li>2<sup>e</sup> étape : Configurer un système pour lancer ces scripts</li>
+  </ul>
+
+  <footer class="notes">
+
   </footer>
 </section>
 </div></div>
@@ -269,40 +353,50 @@
   <header>
     <h2>Utilisation d'un <em>styleguide</em></h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
 </div></div>
-
+<!-- - Vérifier rapidement qu'on n'a pas pété les CSS
+- Documenter l'usage et les modules existants
+- Faciliter la modularisation
+- raise awareness -->
 <div id="ondemanddoc" class="slide shout"><div>
 <section>
   <header>
   <h2>Documentation au besoin</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
 </div></div>
-
+<!-- - Ne pas rester coincé sur un problème
+- La doc vient à toi quand tu en as besoin
+- si un script cherche un navigateur et ne le trouve pas, il ne suffit pas de jeter une erreur mais de donner les instructions pour la corriger. -->
 <div id="debt" class="slide shout"><div>
 <section>
   <header>
   <h2>Gestion de la dette technique</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
 </div></div>
-
+<!--
+- Elle ne peut pas être de 0
+- Même avec les meilleures intentions, on développe sans connaître le futur
+- la dette technique est un investissement: ce qui signifie qu'on la fait pour une bonne raison aujourd'hui (plus rapide à coder) mais il faut la rembourser à un moment. Il ne faut pas générer de la dette technique juste parce qu'on est paresseux.
+- essayer de réduire la dette technique dans le cadre d'une fonctionnalité. On ne fait pas de refactoring pour le plaisir
+ -->
 <div id="conclusion" class="slide shout"><div>
 <section>
   <header>
   <h2>En conclusion</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -314,7 +408,7 @@
   <h2>Choisissez dès maintenant une pratique à mettre en place la semaine
     prochaine&nbsp;!</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
