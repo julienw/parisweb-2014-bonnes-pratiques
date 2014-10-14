@@ -176,7 +176,7 @@
   </header>
 
   <ul class='inline'>
-    <li>libère l'esprit</li>
+    <li>libérer l'esprit</li>
     <li>partage des tâches</li>
     <li>documenter l'historique</li>
   </ul>
@@ -205,6 +205,42 @@
   </header>
 
   <footer class="notes">
+    Avec le blame on peut remonter jusqu'aux discussions qui ont abouti à une
+    certaine ligne de code.
+  </footer>
+</section>
+</div></div>
+
+<div id="versions-4" class="slide oneline"><div>
+<section>
+  <header>
+  <h2>travailler à plusieurs</h2>
+  </header>
+  
+  <footer class="notes">
+    Le couple bugtracker/gestionnaire de versions permet le travail à plusieurs:
+    pouvoir se passer de quelqu'un lorsqu'il est en vacances ou quitte le
+    projet.
+  </footer>
+</section>
+</div></div>
+
+<div id="versions-5" class="slide"><div>
+<section>
+  <header>
+  <h2>quelques bugtrackers</h2>
+  </header>
+  <ul class='inline'>
+    <li>redmine</li>
+    <li>trac</li>
+    <li>bugzilla</li>
+    <li>mantis</li>
+    <li>JIRA</li>
+    <li>gitlab</li>
+    <li>phabricator</li>
+    <li>github et autres projets hébergés</li>
+  </ul>
+  <footer class="notes">
   </footer>
 </section>
 </div></div>
@@ -220,6 +256,79 @@
 </section>
 </div></div>
 
+<div id="review-1" class="slide"><div>
+<section>
+  <header>
+  <h2>revue de code</h2>
+  </header>
+  <ul class='inner'>a
+    <li>diffuser les connaissances</li>
+    <li>limiter le <em>bus factor</em></li>
+    <li>augmenter la cohérence de la base de code</li>
+    <li>un premier filtre pour des bugs</li>
+  </ul>
+
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="review-2" class="slide oneline"><div>
+<section>
+  <header>
+  <h2>le reviewer est responsable du code committé</h2>
+  </header>
+  
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="review-3" class="slide oneline"><div>
+<section>
+  <header>
+    <h2>ce n'est pas un <span style='text-decoration: line-through'>linter</span></h2>
+  </header>
+  
+  <footer class="notes">
+    Un reviewer doit apporter de la valeur ajoutée en tant qu'humain. La
+    position des accolades peut être vérifiée par un outil.
+  </footer>
+</section>
+</div></div>
+
+<div id="review-4" class="slide"><div>
+<section>
+  <header>
+  <h2>Les outils de revue de code</h2>
+  </header>
+  <ul class='inline'>
+    <li>github/bitbucket et les pull requests</li>
+    <li>reviewboard</li>
+    <li>gerrit</li>
+    <li>phabricator</li>
+    <li>gitlab</li>
+    <li><em>pair programming</em></li>
+  </ul>
+  <footer class="notes">
+    Le pair programming est finalement une forme de revue de code... et ça peut
+    être mis en place dès maintenant&nbsp;!
+  </footer>
+</section>
+</div></div>
+
+<div id="review-5" class="slide"><div>
+<section>
+  <header>
+  <h2>voir la conférence suivante d'Agnès&nbsp;!</h2>
+  </header>
+  <img class='middle' alt='Agnès Haasser' src='pictures/parisweb-conf/agnes.jpeg' />
+  
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
 <div id="linter" class="slide shout"><div>
 <section>
   <header>
@@ -230,18 +339,134 @@
   </footer>
 </section>
 </div></div>
-
-<div id="unit" class="slide shout"><div>
+<div id="linter-1" class="slide"><div>
 <section>
   <header>
-  <h2>Tests unitaires</h2>
+  <h2>but d'un linter</h2>
   </header>
-
+  <ul class='inner'>
+    <li class='active'>permet de vérifier automatiquement des critères parfois arbitraires</li>
+    <li>faire des choix arbitraires une bonne fois pour toutes, et s'y tenir</li>
+    <li>pas de bikeshed, donc gain de temps</li>
+  </ul>
+  
   <footer class="notes">
   </footer>
 </section>
 </div></div>
 
+<div id="linter-2" class="slide"><div>
+<section>
+  <header>
+  <h2>types de vérifications</h2>
+  </header>
+  <ul class='inner'>
+    <li class='active'>on réintroduit un peu de rigueur dans des langages
+      dynamiques</li>
+    <li>Globales, écrasement, fonction dans une boucle, this, bugs potentiels, =, ==</li>
+    <li>on trouve des linters pour chaque language: csslint, jshint, eslint,
+      jscs, php-cs...</li>
+  </ul>
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="linter-3" class="slide"><div>
+<section>
+  <header>
+  <h2>et sur un projet existant ?</h2>
+  </header>
+   <ul class='inner'>
+     <li class='active'>Certains linters viennent avec un outil de correction
+       automatique. Pas toujours joli mais efficace</li>
+     <li>On peut mettre en place une "fail list": on prend une photo de l'état
+       existant, puis on avance pour l'améliorer.</li>
+   </ul>
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+<div id="unit" class="slide oneline"><div>
+<section>
+  <header>
+  <h2>tests unitaires</h2>
+  </header>
+  
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="unit-1" class="slide"><div>
+<section>
+  <header>
+  <h2>Principe</h2>
+  </header>
+  <ul class='inner'>
+    <li clas='active'>On isole une unité de code (souvent un fichier) et on le
+      teste indépendamment des autres composants.</li>
+    <li>Permet de tester tout votre code sans effets de bord</li>
+  </ul>
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="unit-2" class="slide"><div>
+<section>
+  <header>
+  <h2>Quelques intérêts</h2>
+  </header>
+  <ul class='inner'>
+    <li class='active'>Un bug n'est corrigé qu'une fois. On est assuré qu'il ne
+    reviendra pas dans la même forme.</li>
+    <li>Donne confiance pour faire des modifications</li>
+    <li>Écrire un texte oblige à utiliser le code proprement dit. On fait donc
+      une revue de l'API développée, voire on crée l'API en rédigeant les tests.</li>
+    <li>Est-ce que l'unité testée a l'air unitaire, ou bien regroupe-t-elle
+      plusieurs responsabilités ?</li>
+    <li>C'est plus rapide de jouer les tests d'un fichier que de tester
+      l'application à la main: on réduit le temps de feedback.</li>
+  </ul>
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="unit-3" class="slide"><div>
+<section>
+  <header>
+  <h2>Des tests unitaires en JavaScript</h2>
+  </header>
+
+  <ul clas='inline'>
+    <li class='active'>mocha</li>
+    <li>qunit</li>
+    <li>chai</li>
+    <li>sinon</li>
+  </ul>
+  
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="unit-4" class="slide"><div>
+<section>
+  <header>
+  <h2>Étapes nécessaires</h2>
+  </header>
+
+  <ul class='inner'>
+    <li class='active'>La première étape est d'écrire un premier test, même
+      minimal</li>
+    <li>Les premiers tests ont beaucoup de valeur</li>
+    <li>Imposer l'écriture de tests pour les fichiers qui sont déjà testés.</li>
+    <li>Il faut que quelqu'un prenne le temps d'écrire les premiers tests pour
+      chaque fichier de l'application.</li>
+  </ul>
+  
 <div id="fonctionnel" class="slide oneline"><div>
 <section>
   <header>
