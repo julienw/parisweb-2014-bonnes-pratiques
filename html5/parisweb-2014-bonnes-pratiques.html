@@ -123,7 +123,7 @@
   <header>
   <h2>Pourquoi ?</h2>
   </header>
- 
+
   <ul class='inner'>
     <li class='active'>qualité et maintenabilité</li>
     <li>réutilisation et trousse à outils</li>
@@ -180,7 +180,7 @@
       r=schung</code></li>
     <li>Ces règles permettent de travailler à plusieurs.</li>
   </ul>
-  
+
   <footer class="notes">
     <p>
     Avec le blame on peut remonter jusqu'aux discussions qui ont abouti à une
@@ -251,7 +251,7 @@
   <ul class='inner'>
     <li class='active'>Le reviewer est responsable du code committé.</li>
     <li>ce n'est pas un <span style='text-decoration: line-through'>linter</span></li>
-  </ul>  
+  </ul>
   <footer class="notes">
     Un reviewer doit apporter de la valeur ajoutée en tant qu'humain. La
     position des accolades peut être vérifiée par un outil.
@@ -285,7 +285,7 @@
   <h2>voir la conférence suivante d'Agnès&nbsp;!</h2>
   </header>
   <img class='middle' alt='Agnès Haasser' src='pictures/parisweb-conf/agnes.jpeg' />
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -311,7 +311,7 @@
     <li>faire des choix arbitraires une bonne fois pour toutes, et s'y tenir</li>
     <li>pas de bikeshed, donc gain de temps</li>
   </ul>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -369,7 +369,7 @@
   <header>
   <h2>Tests unitaires</h2>
   </header>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -441,7 +441,7 @@
     <li><a href='http://chaijs.com/'>chai</a></li>
     <li><a href='http://sinonjs.org/'>sinon</a></li>
   </ul>
-  
+
   <footer class="notes">
   </footer>
 </section>
@@ -463,7 +463,7 @@
   </ul>
 </section>
 </div></div>
-  
+
 <div id="fonctionnel" class="slide oneline"><div>
 <section>
   <header>
@@ -573,17 +573,53 @@
 <div id="styleguide" class="slide oneline"><div>
 <section>
   <header>
-    <h2>Utilisation d'un <em>styleguide</em></h2>
+    <h2>Générateur de <em>styleguide</em></h2>
   </header>
 
   <footer class="notes">
   </footer>
 </section>
 </div></div>
-<!-- - Vérifier rapidement qu'on n'a pas pété les CSS
-- Documenter l'usage et les modules existants
-- Faciliter la modularisation
-- raise awareness -->
+
+<div id="styleguide2" class="slide cover"><div>
+<section>
+<img src="pictures/parisweb-conf/styledocco.png" class="middle">
+</section>
+</div></div>
+
+<div id="styleguide3" class="slide"><div>
+<section>
+  <header>
+    <h2>Générateur de <em>styleguide</em></h2>
+  </header>
+
+  <ul class="inner">
+    <li class="active">Le pendant code des styleguide designer</li>
+    <li>Permet de vérifier rapidement les changements</li>
+    <li>HTML minimal pour utiliser un composant</li>
+    <li>Rôle de documentation</li>
+  </ul>
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
+<div id="styleguide4" class="slide"><div>
+<section>
+  <header>
+    <h2>Générateur de <em>styleguide</em></h2>
+  </header>
+
+  <ul class="inner">
+    <li class="active"><a href="http://vinspee.me/style-guide-guide/">Répertoire d'outils</a></li>
+    <li>1<sup>re</sup> étape : Adopter lors d'un redesign de composant</li>
+    <li>2<sup>e</sup> étape : Vérifier le guide lors des revues de code</li>
+  </ul>
+  <footer class="notes">
+  </footer>
+</section>
+</div></div>
+
 <div id="ondemanddoc" class="slide oneline"><div>
 <section>
   <header>
@@ -594,9 +630,27 @@
   </footer>
 </section>
 </div></div>
-<!-- - Ne pas rester coincé sur un problème
-- La doc vient à toi quand tu en as besoin
-- si un script cherche un navigateur et ne le trouve pas, il ne suffit pas de jeter une erreur mais de donner les instructions pour la corriger. -->
+
+<div id="ondemanddoc2" class="slide"><div>
+<section>
+  <header>
+  <h2>Documentation au besoin</h2>
+  </header>
+  <ul class="inner">
+    <li class="active">Lorsqu'un problème survient, les messages d'erreur informent le développeur</li>
+    <li>Si un script ne trouve pas un navigateur, il suggère comment indiquer le chemin vers le navigateur</li>
+    <li>Si un script nécessite une librairie, il indique comment l'installer</li>
+    <li>Utiliser la formation des nouveaux employés pour l'inspiration</li>
+    <li><code>You should install gjslint to lint your patch</code>
+    <code>https://developers.google.com/closure/utilities/docs/linter_howto</code>
+    </li>
+  </ul>
+  <footer class="notes">
+  Ne pas laisser le développeur dans un cul de sac
+  </footer>
+</section>
+</div></div>
+
 <div id="debt" class="slide oneline"><div>
 <section>
   <header>
@@ -607,12 +661,26 @@
   </footer>
 </section>
 </div></div>
-<!--
-- Elle ne peut pas être de 0
-- Même avec les meilleures intentions, on développe sans connaître le futur
-- la dette technique est un investissement: ce qui signifie qu'on la fait pour une bonne raison aujourd'hui (plus rapide à coder) mais il faut la rembourser à un moment. Il ne faut pas générer de la dette technique juste parce qu'on est paresseux.
-- essayer de réduire la dette technique dans le cadre d'une fonctionnalité. On ne fait pas de refactoring pour le plaisir
- -->
+
+<div id="debt2" class="slide"><div>
+<section>
+  <header>
+  <h2>Gestion de la dette technique</h2>
+  </header>
+
+  <ul class="inner">
+    <li class="active">Elle ne pas être de 0.</li>
+    <li>C'est un investissement pour demain. On choisit une solution plus simple aujourd'hui car on ne connait pas les besoins de demain.</li>
+    <li>Ce n'est pas de la paresse.</li>
+    <li>Les ré-écritures sont plus efficaces si elles sont dans le cadre d'une fonctionnalité.</li>
+  </ul>
+  <footer class="notes">
+  Paresse : Laissez trainer du code mort parce qu'on a fait un patch vite fait
+  Refactoring : avec une fonctionnalité en tête, vous connaissez un peu mieux le futur
+  </footer>
+</section>
+</div></div>
+
 <div id="conclusion" class="slide oneline"><div>
 <section>
   <header>
@@ -664,7 +732,7 @@
     To hide progress bar from entire presentation
     just remove “progress” element.
     -->
-  <div class="progress"><div></div></div>
+  <!-- <div class="progress"><div></div></div> -->
   <script src="scripts/script.js"></script>
   <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
 </body>
