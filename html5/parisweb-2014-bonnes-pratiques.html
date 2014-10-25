@@ -12,7 +12,7 @@
 -->
 <head>
   <meta charset="UTF-8">
-  <title>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</title>
+  <title>Code de qualité&nbsp;: appliquer des bonnes pratiques dans le développement logiciel</title>
 <!--
   If you upload your slides to the web, ensure that you have
   a good title - this shows up in search results and social
@@ -23,7 +23,7 @@
 </head>
 <body class="list">
   <header class="caption">
-    <h1>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</h1>
+    <h1>Code de qualité&nbsp;: appliquer des bonnes pratiques dans le développement logiciel</h1>
     <p class="footer">
       Anthony Ricaud
       <a href="http://twitter.com/rik24d">@rik24d</a> ou
@@ -42,7 +42,7 @@
     page. Vous pouvez ensuite utilisez le clavier pour naviguer. <button
     onclick="goFullScreen()">Passer en mode plein écran</button></p>
     <p class="abstract">
-      <strong>Résumé: </strong>
+      <strong>Résumé&nbsp;:</strong>
     </p>
   </aside>
 
@@ -55,7 +55,7 @@
   <div id="cover" class="slide"><div>
     <section>
       <header>
-        <h2>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</h2>
+        <h2>Code de qualité&nbsp;: appliquer des bonnes pratiques dans le développement logiciel</h2>
       </header>
       <img src="pictures/parisweb-conf/anthony-et-julien.jpg"
            class="middle shadow" height="300"
@@ -91,7 +91,7 @@
 <div id="firefox-os" class="slide"><div>
 <section>
   <header>
-  <h2>Firefox OS: un OS mobile libre pour le web</h2>
+  <h2>Firefox OS&nbsp;: un OS mobile libre pour le web</h2>
   </header>
   <img src="pictures/fxos/firefoxos.png"
        alt="Firefox OS"
@@ -111,7 +111,7 @@
 <div id="pourquoi" class="slide oneline"><div>
 <section>
   <header>
-  <h2>Pourquoi ?</h2>
+  <h2>Pourquoi&nbsp;?</h2>
   </header>
 
   <footer class="notes">
@@ -122,7 +122,7 @@
 <div id="pourquoi-1" class="slide"><div>
 <section>
   <header>
-  <h2>Pourquoi ?</h2>
+  <h2>Pourquoi&nbsp;?</h2>
   </header>
 
   <ul class='inner'>
@@ -174,9 +174,9 @@
   </header>
 
   <ul class='inner'>
-    <li class='active'>1 ticket = 1 tâche: correction de bug ou nouvelle fonction</li>
+    <li class='active'>1 ticket = 1 tâche&nbsp;: correction de bug ou nouvelle fonction</li>
     <li>Votre message de commit est important, il doit avoir la référence vers le
-      bug:<br/>
+      bug&nbsp;:<br/>
     <code style='font-size: 1rem'>Bug 1082064 - [Messages] Prevent double DOMContentLoaded events
       r=schung</code></li>
     <li>Ces règles permettent de travailler à plusieurs.</li>
@@ -188,7 +188,7 @@
     certaine ligne de code.
     </p>
     <p>
-    Le couple bugtracker/gestionnaire de versions permet le travail à plusieurs:
+    Le couple bugtracker/gestionnaire de versions permet le travail à plusieurs&nbsp;:
     pouvoir se passer de quelqu'un lorsqu'il est en vacances ou quitte le
     projet.
     </p>
@@ -274,7 +274,7 @@
     <li><em>pair programming</em></li>
   </ul>
   <footer class="notes">
-    Le pair programming est finalement une forme de revue de code... et ça peut
+    Le pair programming est finalement une forme de revue de code&hellip; et ça peut
     être mis en place dès maintenant&nbsp;!
   </footer>
 </section>
@@ -327,8 +327,8 @@
     <li class='active'>On réintroduit un peu de rigueur dans des langages
       dynamiques</li>
     <li>Globales, écrasement, fonction dans une boucle, this, bugs potentiels, =, ==</li>
-    <li>On trouve des linters pour chaque language: csslint, jshint, eslint,
-      jscs, php-cs...</li>
+    <li>On trouve des linters pour chaque language&nbsp;: csslint, jshint, eslint,
+      jscs, php-cs&hellip;</li>
   </ul>
   <footer class="notes">
   </footer>
@@ -338,14 +338,14 @@
 <div id="linter-3" class="slide"><div>
 <section>
   <header>
-  <h2>et sur un projet existant ?</h2>
+  <h2>et sur un projet existant&nbsp;?</h2>
   </header>
    <ul class='inner'>
      <li class='active'>Certains linters viennent avec un outil de correction
        automatique. Pas toujours joli mais efficace</li>
-     <li>On peut mettre en place une "fail list": on prend une photo de l'état
+     <li>On peut mettre en place une "fail list"&nbsp;: on prend une photo de l'état
        existant, puis on avance pour l'améliorer.</li>
-     <li>On peut mettre en place un <em>commit hook</em>: à chaque commit, on
+     <li>On peut mettre en place un <em>commit hook</em>&nbsp;: à chaque commit, on
        vérifie si le changement n'introduit pas de problèmes.</li>
    </ul>
   <footer class="notes">
@@ -403,9 +403,9 @@
     <li>Écrire un test oblige à utiliser le code proprement dit. On fait donc
       une revue de l'API développée, voire on crée l'API en rédigeant les tests.</li>
     <li>Est-ce que l'unité testée a l'air unitaire, ou bien regroupe-t-elle
-      plusieurs responsabilités ?</li>
+      plusieurs responsabilités&nbsp;?</li>
     <li>C'est plus rapide de jouer les tests d'un fichier que de tester
-      l'application à la main: on réduit le temps de feedback.</li>
+      l'application à la main&nbsp;: on réduit le temps de feedback.</li>
   </ul>
   <footer class="notes">
   </footer>
@@ -498,9 +498,9 @@
     <h2>Tests fonctionnels</h2>
   </header>
   <ul class="inner">
-    <li class="active">Exemples : <a href="http://docs.seleniumhq.org/">Selenium</a>, <a href="http://phantomjs.org/">PhantomJS</a>, <a href="http://slimerjs.org/">SlimerJS</a>, <a href="http://casperjs.org/">CasperJS</a></li>
-    <li>1<sup>re</sup> étape : Choisir un outil et écrire son premier test</li>
-    <li>2<sup>e</sup> étape : Choisir les scénarios importants à tester</li>
+    <li class="active">Exemples&nbsp;: <a href="http://docs.seleniumhq.org/">Selenium</a>, <a href="http://phantomjs.org/">PhantomJS</a>, <a href="http://slimerjs.org/">SlimerJS</a>, <a href="http://casperjs.org/">CasperJS</a></li>
+    <li>1<sup>re</sup> étape&nbsp;: Choisir un outil et écrire son premier test</li>
+    <li>2<sup>e</sup> étape&nbsp;: Choisir les scénarios importants à tester</li>
   </ul>
   <footer class="notes">
   </footer>
@@ -543,7 +543,7 @@
   </header>
   <ul class="inner">
     <li class="active">Vous saurez exactement quand un problème apparait</li>
-    <li>Vert: on bosse; Rouge: on corrige</li>
+    <li>Vert&nbsp;: on bosse; Rouge&nbsp;: on corrige</li>
     <li>Peut générer de jolis graphiques à afficher au bureau</li>
     <li>On peut aussi faire tourner cela sur les patchs en cours</li>
   </ul>
@@ -560,9 +560,9 @@
     <h2>Intégration continue</h2>
   </header>
   <ul class="inner">
-    <li class="active">Exemples : <a href="https://travis-ci.org/">Travis</a>, <a href="http://jenkins-ci.org/">Jenkins</a>, <a href="http://buildbot.net/">Build Bot</a></li>
-    <li>1<sup>re</sup> étape : Avoir des scripts faciles à lancer à la main</li>
-    <li>2<sup>e</sup> étape : Configurer un système pour lancer ces scripts</li>
+    <li class="active">Exemples&nbsp;: <a href="https://travis-ci.org/">Travis</a>, <a href="http://jenkins-ci.org/">Jenkins</a>, <a href="http://buildbot.net/">Build Bot</a></li>
+    <li>1<sup>re</sup> étape&nbsp;: Avoir des scripts faciles à lancer à la main</li>
+    <li>2<sup>e</sup> étape&nbsp;: Configurer un système pour lancer ces scripts</li>
   </ul>
 
   <footer class="notes">
@@ -613,8 +613,8 @@
 
   <ul class="inner">
     <li class="active"><a href="http://vinspee.me/style-guide-guide/">Répertoire d'outils</a></li>
-    <li>1<sup>re</sup> étape : Adopter lors d'un redesign de composant</li>
-    <li>2<sup>e</sup> étape : Vérifier le guide lors des revues de code</li>
+    <li>1<sup>re</sup> étape&nbsp;: Adopter lors d'un redesign de composant</li>
+    <li>2<sup>e</sup> étape&nbsp;: Vérifier le guide lors des revues de code</li>
   </ul>
   <footer class="notes">
   </footer>
@@ -676,8 +676,8 @@
     <li>Les ré-écritures sont plus efficaces si elles sont dans le cadre d'une fonctionnalité.</li>
   </ul>
   <footer class="notes">
-  Paresse : Laissez trainer du code mort parce qu'on a fait un patch vite fait
-  Refactoring : avec une fonctionnalité en tête, vous connaissez un peu mieux le futur
+  Paresse&nbsp;: Laissez trainer du code mort parce qu'on a fait un patch vite fait
+  Refactoring&nbsp;: avec une fonctionnalité en tête, vous connaissez un peu mieux le futur
   </footer>
 </section>
 </div></div>
@@ -713,7 +713,7 @@
       <img src="pictures/mozillaoverview/redpanda.jpg" class="right" alt="Red panda (Firefox)">
       <ul class="nobull">
         <li>Julien Wajsberg, Anthony Ricaud</li>
-        <li>Code de qualité: appliquer des bonnes pratiques dans le développement logiciel</li>
+        <li>Code de qualité&nbsp;: appliquer des bonnes pratiques dans le développement logiciel</li>
         <li><a href="http://twitter.com/jwajsberg">@jwajsberg</a> <a
                 href="http://twitter.com/rik24d">@rik24d</a></li>
         <li><strong>Slides</strong>:
